@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://u73a40qao65x"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_jgnwb"]
+[ext_resource type="Texture2D" uid="uid://dbhifi0ww3i16" path="res://Assets/Images/grid_64px.png" id="1_msu0k"]
+[ext_resource type="Texture2D" uid="uid://cqvbcghq5leci" path="res://icon.png" id="2_f4qq3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njb6t"]
+size = Vector2(64, 64)
+
+[node name="ItemIcon" type="TextureButton"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jgnwb")
+
+[node name="Grid" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_msu0k")
+offset = Vector2(512, 512)
+region_enabled = true
+region_rect = Rect2(0, 0, 2048, 2048)
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(320, 192)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture = ExtResource("2_f4qq3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_njb6t")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

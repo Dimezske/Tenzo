@@ -1,0 +1,615 @@
+[gd_scene load_steps=5 format=3 uid="uid://bixcqykcva6gg"]
+
+[ext_resource type="Script" path="res://Scenes/inventory.gd" id="1_dvusb"]
+[ext_resource type="PackedScene" uid="uid://bd420ny1sb3aj" path="res://Scenes/ItemIcon.tscn" id="2_kjhlj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_mars3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hxq8v"]
+font_color = Color(1, 1, 0.745098, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dvusb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 500.0
+color = Color(0.247059, 0.345098, 0.419608, 0.6)
+
+[node name="Panel" type="Panel" parent="ColorRect"]
+custom_minimum_size = Vector2(500, 40)
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="ColorRect"]
+material = SubResource("CanvasItemMaterial_mars3")
+custom_minimum_size = Vector2(0, 45)
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 45.0
+grow_horizontal = 2
+text = "INVENTORY"
+label_settings = SubResource("LabelSettings_hxq8v")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 45.0
+offset_right = 510.0
+offset_bottom = 495.0
+columns = 7
+
+[node name="Panel" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel2" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel2" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel3" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel3" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel4" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel4" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel5" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel5" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel6" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel6" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel7" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel7" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel8" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel8" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel9" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel9" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel10" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel10" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel11" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel11" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel12" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel12" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel13" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel13" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel14" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel14" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel15" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel15" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel16" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel16" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel17" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel17" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel18" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel18" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel19" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel19" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel20" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel20" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel21" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel21" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel22" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel22" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel23" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel23" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel24" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel24" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel25" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel25" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel26" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel26" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel27" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel27" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel28" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel28" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel29" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel29" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel30" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel30" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel31" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel31" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel32" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel32" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel33" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel33" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel34" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel34" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="Panel35" type="Panel" parent="GridContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 2
+
+[node name="ItemIcon" parent="GridContainer/Panel35" instance=ExtResource("2_kjhlj")]
+custom_minimum_size = Vector2(65, 65)
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 65.0
+offset_bottom = 65.0
+grow_horizontal = 1
+grow_vertical = 1
